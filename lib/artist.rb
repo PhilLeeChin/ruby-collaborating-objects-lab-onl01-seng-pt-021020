@@ -25,7 +25,6 @@ class Artist
   end
 
   def self.find(name)
-
     self.all.find {|artist| artist.name == artist.name}
   end
 
