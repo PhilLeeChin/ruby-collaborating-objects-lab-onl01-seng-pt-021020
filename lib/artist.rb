@@ -25,25 +25,18 @@ class Artist
   end
 
   def self.find(name)
-# <<<<<<< HEAD
-#     self.all.find {|artist| artist.name == artist.name}
-#   end
-#
-#   def self.find_or_create_by_name(name)
-#     self.find(name) ? self.find(name) : self.new(name)
-# =======
-#     self.all.find {|artist| artist.name == artist}
-#   end
-#
-#   def self.create(name)
-#     artist = Artist.new(name)
-#     artist.save
-#     artist
-#   end
-#
-#   def self.find_or_create_by_name(name)
-#     self.find(name) != nil ? self.find(name) : self.create(name)
-# >>>>>>> 182f658a9fa771b140a33311a4c91fa54e04a49e
+
+    self.all.find {|artist| artist.name == artist.name}
+  end
+
+  def self.create(name)
+    artist = Artist.new(name)
+    artist.save
+    artist
+  end
+
+  def self.find_or_create_by_name(name)
+    self.find(name) != nil ? self.find(name) : self.create(name)
   end
 
   def print_songs
