@@ -18,16 +18,16 @@ class Song
   end
 
   def self.new_by_filename(title)
-<<<<<<< HEAD
-    songs = title.split(" - ")[1]
-    artist = title.split(" - ")[0]
-    song = self.new(songs)
-    song.artist_name = artist
-=======
-    songs = title.chomp(".mp3").split(" - ")
-    song = Song.new(songs[1])
-    song.artist = songs[0]
->>>>>>> 182f658a9fa771b140a33311a4c91fa54e04a49e
+# <<<<<<< HEAD
+#     songs = title.split(" - ")[1]
+#     artist = title.split(" - ")[0]
+#     song = self.new(songs)
+#     song.artist_name = artist
+# =======
+#     songs = title.chomp(".mp3").split(" - ")
+#     song = Song.new(songs[1])
+#     song.artist = songs[0]
+# >>>>>>> 182f658a9fa771b140a33311a4c91fa54e04a49e
     song
   end
 
